@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f2e7;
+            color: #333;
+        }
+        header {
+            background-color: #d3c6a6;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            color: #fff;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #b5a589;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background-color: #d3c6a6;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .skill {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .skill h2 {
+            color: #b5a589;
+            margin: 0 0 10px;
+        }
+        .skill p {
+            margin: 10px 0;
+        }
+        .icon {
+            font-size: 50px;
+            color: #b5a589;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .capcut:hover .icon {
+            transform: rotate(360deg);
+        }
+        .word:hover .icon {
+            transform: scale(1.2);
+        }
+        .powerpoint:hover .icon {
+            transform: scaleX(-1);
+        }
+        .canva:hover .icon {
+            transform: translateY(-10px);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Skills</h1>
+</header>
+
+<nav>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-user"></i> About Me</a>
+    <a href="blogs.html"><i class="fas fa-blog"></i> Blogs</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+</nav>
+
+<section class="skills">
+    <h3><p>Over the years, I have honed a diverse set of skills that complement my academic pursuits and creative interests:</p></h3>
+    <div class="skill canva">
+        <i class="fas fa-palette icon"></i>
+        <h2>Canva</h2>
+        <p>Using Canva, I design stunning graphics and layouts for social media, marketing materials, and other creative projects.</p>
+    </div>
+    <div class="skill word">
+        <i class="fas fa-file-word icon"></i>
+        <h2>Microsoft Word</h2>
+        <p>With extensive experience in Microsoft Word, I can create, edit, and format documents efficiently and professionally.</p>
+    </div>
+    <div class="skill powerpoint">
+        <i class="fas fa-file-powerpoint icon"></i>
+        <h2>PowerPoint</h2>
+        <p>I excel at creating dynamic and visually appealing presentations using Microsoft PowerPoint for various audiences.</p>
+    </div>
+    <div class="skill capcut">
+        <i class="fas fa-video icon"></i>
+        <h2>CapCut</h2>
+        <p>I am skilled in video editing using CapCut, creating engaging and professional-looking videos for various purposes.</p>
+    </div>
+</section>
+
+</body>
+</html>
